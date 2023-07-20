@@ -1,0 +1,144 @@
+* {
+  -padding: 0;
+  margin: 0;
+}
+.wrapperCard {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  box-sizing: border-box;
+
+  /* height: 153px; */
+  width: 320px;
+
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px #eae2fd;
+}
+
+.cardTitle {
+  color: #403937;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 130%;
+}
+
+.cardContent {
+  width: 270px;
+  /* display: flex; */
+  padding-block: 10px;
+}
+
+.wrapperTags {
+  display: flex;
+  gap: 8px;
+}
+
+.wrapperTags div {
+  display: flex;
+  padding: 4px 8px;
+  align-items: flex-start;
+  gap: 10px;
+
+  border-radius: 8px;
+  background: #e2d6ff;
+
+  color: #7c3aed;
+  font-family: "Inter", sans-serif;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+p {
+  overflow: hidden;
+  color: #756966;
+  text-overflow: ellipsis;
+  whitespace: nowrap;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 130%;
+}
+
+.cardContent p {
+  /* width: 300px; */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+
+
+.wrapperInputFilter {
+  display: flex;
+  gap: 16px;
+}
+
+.containerFilter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+
+  width: 135px;
+  padding: 12px 32px;
+  border-radius: 5px;
+
+  background: #7c3aed;
+
+  cursor: pointer;
+}
+
+.filterIcon {
+  color: #fff;
+}
+
+.elementButton {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0px 4px 16px 0px rgba(22, 22, 22, 0.1);
+  font-size: 14px;
+  line-height: 24px;
+}
+
+
+.SearchIcon {
+  color: #505059;
+}
+.containerInput {
+  width: 1000px;
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 16px 24px;
+  border: 0.7px solid #e3e3e3;
+  background: #fff;
+  box-shadow: 0px 4px 16px 0px rgba(22, 22, 22, 0.1);
+}
+
+input {
+  width: 100%;
+  height: 26px;
+  padding-left: 10px;
+  border: 0px;
+  font-size: 1rem;
+  outline: 0;
+
+
+  font-family: Inter;
+  font-size: 16px;
+  
+  font-weight: 400;
+  line-height: 100%;
+}
+
+input::placeholder {
+  color: #7c7c8a;
+  font-style: italic;
+}

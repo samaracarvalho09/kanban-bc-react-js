@@ -1,0 +1,35 @@
+.wrapperMenu {
+  width: 100vw;
+  height: 100vh;
+  background: #7c3aed;
+  padding: 32px 35px;
+}
+
+.wrapperIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.iconLogo {
+  width: 100px;
+}
+
+.wrapperMenu div > img {
+  padding-bottom: 60px;
+}
+
+span img {
+  padding-right: 16px;
+}
+
+.wrapperIcons span {
+  color: #cab3ff;
+  cursor: pointer;
+  display: flex;
+}
+
+.wrapperIcons span:hover {
+  color: #fff;
+  font-weight: 700;
+}
