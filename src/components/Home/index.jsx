@@ -1,18 +1,27 @@
 import { Cards } from "../Cards";
-import { FilterItems } from "../FilterItems";
+import { InputSearch } from "../InputSearch";
 import { Header } from "../Header";
+import { Menu } from "../Menu";
 
 
 
 export function Home() {
+  // const [query, setQuery] = useState("");
+
+const results = filterItems(cardsContent, query);
+
 
   return (
-   <div>
-     <Header />
-    {/* <FilterItems /> */}
-    <Cards />
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat tempore ab, reiciendis fugit, cupiditate dicta exercitationem earum labore ducimus perferendis illo beatae suscipit repellat ipsa expedita repellendus laudantium sequi modi!</p>
-    <p>Samara Carvalho</p>
-   </div>
-  )
+    <div style={{ background: "#7c3aed", display: "flex" }}>
+      <div>
+        <Menu />
+
+      </div>
+        <div>
+          <Header />
+          <InputSearch />
+          <Cards items={results}/>
+        </div>
+    </div>
+  );
 }
