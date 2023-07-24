@@ -1,5 +1,5 @@
 import { Menu } from "./components/Menu"
-import { InputSearch } from "./components/InputSearch";
+import { SearchBar } from "./components/InputSearch";
 import { Header } from "./components/Header";
 import './styles.module.css'
 

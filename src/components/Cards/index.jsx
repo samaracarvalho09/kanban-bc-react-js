@@ -3,26 +3,22 @@ import styles from "../Cards/styles.module.css";
 
 import { FunnelSimple, MagnifyingGlass } from "@phosphor-icons/react";
 import cardsContent from "../../cardsContext";
-// import filterItems from '../InputSearch'
-
-const [query, setQuery] = useState("");
-
-const results = filterItems(cardsContent, query);
 
 
-
-export function Cards() {
-  const toDoCards = cardsContent.filter((card) => card.category === "To Do");
-  const doingCard = cardsContent.filter((card) => card.category === "Doing");
-  const doneCard = cardsContent.filter((card) => card.category === "Done");
+export function Cards({ toDoCards, doingCards, doneCards}) {
+  // const toDoCard = cardsContent.filter((card) => card.category === "To Do");
+  // const doingCard = cardsContent.filter((card) => card.category === "Doing");
+  // const doneCard = cardsContent.filter((card) => card.category === "Done");
 
   return (
-    <div>
+    // <div>  
       <div className={styles.wrapperAllCards}>
+        
         <div className={styles.containerCategory}>
           <div>
             <h3 className={styles.categoryTitle}>To Do</h3>
           </div>
+
           {toDoCards.map((cardContent, index) => (
             <div key={index} className={styles.wrapperCard}>
               <h3 className={styles.cardTitle}>{cardContent.title}</h3>
@@ -46,7 +42,7 @@ export function Cards() {
           <div>
             <h3 className={styles.categoryTitle}>Doing</h3>
           </div>
-          {doingCard.map((cardContent, index) => (
+          {doingCards.map((cardContent, index) => (
             <div key={index} className={styles.wrapperCard}>
               <h3 className={styles.cardTitle}>{cardContent.title}</h3>
               <div className={styles.cardContent}>
@@ -69,7 +65,7 @@ export function Cards() {
           <div>
             <h3 className={styles.categoryTitle}>Done</h3>
           </div>
-          {doneCard.map((cardContent, index) => (
+          {doneCards.map((cardContent, index) => (
             <div key={index} className={styles.wrapperCard}>
               <h3 className={styles.cardTitle}>{cardContent.title}</h3>
               <div className={styles.cardContent}>
@@ -87,7 +83,8 @@ export function Cards() {
             </div>
           ))}
         </div>
+        
       </div>
-    </div>
+  
   );
 }

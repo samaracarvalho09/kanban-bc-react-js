@@ -1,6 +1,7 @@
 .wrapperInputFilter {
   display: flex;
   gap: 16px;
+  margin-block: 32px;
 }
 
 .containerFilter {
@@ -9,8 +10,8 @@
   align-items: center;
   gap: 8px;
 
-  width: 135px;
-  padding: 12px 32px;
+  /* width: 135px; */
+  padding: 12px 26px;
   border-radius: 5px;
 
   background: #7c3aed;
@@ -35,7 +36,8 @@
   color: #505059;
 }
 .containerInput {
-  width: 1000px;
+  /* max-width: 600px; */
+  width: 100%;
   display: flex;
   align-items: center;
   border-radius: 8px;
@@ -50,7 +52,7 @@ input {
   height: 26px;
   padding-left: 10px;
   border: 0px;
-  font-size: 1rem;
+  font-size: 14px;
   outline: 0;
 
 
@@ -64,4 +66,5 @@ input {
 input::placeholder {
   color: #7c7c8a;
   font-style: italic;
+  font-size: 14px;
 }

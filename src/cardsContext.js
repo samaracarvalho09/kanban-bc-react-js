@@ -29,9 +29,9 @@ const cardsContent = [
     tags: ["autocuidado"],
   },
   {
-    title: "Conferir o novo desafio 🚀 ",
+    title: "Conferir as novas atualizações do React JS 🚀 ",
     content:
-      "Conferir o novo projeto do #boraCodar para fazê-lo da melhor maneira possível",
+      "Conferir as atualizações dos hooks e praticar com projetos do boraCodar",
     category: "Doing",
     tags: ["rocketseat", "desafio"],
   },
@@ -49,16 +49,16 @@ const cardsContent = [
     tags: ["rocketseat", "desafio"],
   },
   {
-    title: "#boraCodar uma página de clima 🧑‍💻",
+    title: "#projetoCasaNova 🏡⚒",
     content:
-      "Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.",
+      "O projeto Casa Nova tem como objetivo gerar uma lista detalhada",
     category: "Done",
     tags: ["rocketseat", "desafio"],
   },
   {
-    title: "#boraCodar uma página de clima 🧑‍💻",
+    title: "#provaDeJava 🧑‍💻",
     content:
-      "Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.",
+      "Estudar para a prova de Java no dia 10/10",
     category: "Done",
     tags: ["rocketseat", "desafio"],
   },

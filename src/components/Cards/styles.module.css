@@ -18,13 +18,15 @@
 
 .wrapperAllCards {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  gap: 48px;
+  padding: 24px;
 }
 
 .categoryTitle {
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
   padding: 10px;
 }
 
@@ -60,9 +62,6 @@
   align-items: flex-start;
   gap: 10px;
 
- 
- 
-
   color: #7c3aed;
   font-family: "Inter", sans-serif;
   font-size: 11px;
@@ -94,8 +93,6 @@ p {
 .containerCardTags {
   display: flex;
   gap: 10px;
-
-  
 }
 
 .containerCardTags span {
@@ -103,10 +100,6 @@ p {
   border-radius: 8px;
   padding: 4px 8px;
 }
-
-
-
-
 
 .wrapperInputFilter {
   display: flex;
@@ -140,7 +133,6 @@ p {
   line-height: 24px;
 }
 
-
 .SearchIcon {
   color: #505059;
 }
@@ -163,10 +155,9 @@ input {
   font-size: 1rem;
   outline: 0;
 
-
   font-family: Inter;
   font-size: 16px;
-  
+
   font-weight: 400;
   line-height: 100%;
 }

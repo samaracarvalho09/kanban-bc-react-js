@@ -6,7 +6,7 @@ export function Header() {
     <div className={styles.wrapperHeader}>
       <div className={styles.containerEditName}>
         <h3>Meu Kanban</h3>
-        <Pencil size={32} className={styles.editIcon} />
+        <Pencil size={22} className={styles.editIcon} />
       </div>
       <div className={styles.wrapperAvatar}>
      

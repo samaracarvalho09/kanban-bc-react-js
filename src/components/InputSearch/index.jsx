@@ -3,15 +3,13 @@ import { FunnelSimple, MagnifyingGlass } from "@phosphor-icons/react";
 import cardsContent from "../../cardsContext";
 import { useState } from "react";
 
-function handleChange(e) {
-  setQuery(e.target.value);
-}
-export function InputSearch() {
 
-  function filterItems(items, query) {
-    query = query.toLowerCase();
-    return items.filter((item) => item.content.toLowerCase().includes(query))
-  }
+export function filterItems(items, query) {
+  query = query.toLowerCase();
+  return items.filter((item) => item.content.toLowerCase().includes(query))
+}
+export function SearchBar({ query, onChange}) {
+
 
   return (
     <div className={styles.wrapperInputFilter}>
@@ -20,16 +18,16 @@ export function InputSearch() {
         <span className={styles.elementButton}>Filtrar</span>
       </div>
 
-      <div>
+     
         <div className={styles.containerInput}>
           <MagnifyingGlass size={24} className={styles.SearchIcon} />
           <input
             type="text"
             placeholder="Busque por cards, assuntos ou responsáveis..."
             value={query}
-            onChange={handleChange}
+            onChange={onChange}
           />
-        </div>
+        
       </div>
     </div>
   );
