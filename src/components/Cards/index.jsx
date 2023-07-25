@@ -1,10 +1,6 @@
 import { useState } from "react";
 import styles from "../Cards/styles.module.css";
 
-import { FunnelSimple, MagnifyingGlass } from "@phosphor-icons/react";
-import cardsContent from "../../cardsContext";
-
-
 export function Cards({ toDoCards, doingCards, doneCards}) {
   // const toDoCard = cardsContent.filter((card) => card.category === "To Do");
   // const doingCard = cardsContent.filter((card) => card.category === "Doing");
